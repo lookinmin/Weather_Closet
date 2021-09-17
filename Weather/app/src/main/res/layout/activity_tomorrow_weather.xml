@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TomorrowWeather"
+    android:id="@+id/tomo_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Tomorrow Weather"
+            android:textSize="27sp"
+            android:textColor="#EFB866"
+            android:gravity="center"
+            android:fontFamily="@font/cre"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="현재 위치 : "
+            android:textColor="@color/white"
+            android:fontFamily="@font/cre"/>
+        <TextView
+            android:id="@+id/tomo_show_gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text=""
+            android:textColor="@color/white"
+            android:fontFamily="@font/cre"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tomorrow_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/cre"/>
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/set_day"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=""
+            android:layout_gravity="center"
+            android:fontFamily="@font/cre"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/tomo_icon_summary"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tomo_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text=""
+            android:textColor="@color/white"
+            android:fontFamily="@font/cre"/>
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="평균기온 :"
+                android:textColor="#EFB866"
+                android:fontFamily="@font/cre"/>
+
+            <TextView
+                android:id="@+id/tomo_weather_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text=""
+                android:textColor="#EFB866"
+                android:fontFamily="@font/wemakeprice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cre"
+                android:textSize="16sp"
+                android:textColor="#EFB866"
+                android:text="°C"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tomo_temp_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/wemakeprice"
+                android:textSize="18sp"
+                android:textColor="#FF0000"
+                android:text=""/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cre"
+                android:textSize="16sp"
+                android:textColor="#FF0000"
+                android:text="°C"/>
+            <Space
+                android:layout_width="4dp"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="18sp"
+                android:layout_height="22sp"
+                android:background="@drawable/slash"
+                app:backgroundTint="#EFB866"/>
+            <Space
+                android:layout_width="4dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tomo_temp_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/wemakeprice"
+                android:textSize="18sp"
+                android:textColor="#0050FF"
+                android:text=""/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cre"
+                android:textSize="16sp"
+                android:textColor="#0050FF"
+                android:text="°C"/>
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cre"
+                android:gravity="left"
+                android:text="미세먼지 :"
+                android:textColor="@color/white"
+                android:textSize="17sp"/>
+            <ImageView
+                android:id="@+id/tomo_fine_dust"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="97dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cre"
+                android:gravity="left"
+                android:text="초미세먼지 :"
+                android:textSize="17sp"/>
+
+            <ImageView
+                android:id="@+id/tomo_superfine_dust"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="3dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/dust1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:fontFamily="@font/bccard"/>
+            <Space
+                android:layout_width="92dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/dust2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:fontFamily="@font/bccard"/>
+            <Space
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border2"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/tomo_view_top"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="70dp">
+                    </androidx.viewpager2.widget.ViewPager2>
+
+                    <me.relex.circleindicator.CircleIndicator3
+                        android:id="@+id/tomo_indicator1"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_gravity="bottom" />
+                </LinearLayout>
+            </FrameLayout>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/tomo_view_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="70dp">
+                    </androidx.viewpager2.widget.ViewPager2>
+
+                    <me.relex.circleindicator.CircleIndicator3
+                        android:id="@+id/tomo_indicator2"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_gravity="bottom" />
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <Space
+                        android:layout_width="12dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:text="00:00 ~ 03:00"
+                        android:textColor="@color/white"
+                        android:textSize="19sp"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:id="@+id/tomo_weather_image1"
+                        android:layout_width="33dp"
+                        android:layout_height="match_parent"/>
+                    <Space
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tomo_temp1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:textSize="19sp"
+                        android:textColor="@color/white"
+                        android:text=""/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cre"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"
+                        android:text="°C"/>
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/tomo_humidity_image1"
+                        android:layout_width="21dp"
+                        android:layout_height="19dp" />
+
+                    <Space
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tomo_humidity1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:textSize="19sp"
+                        android:textColor="@color/white"
+                        android:text=""/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cre"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"
+                        android:text="%"/>
+
+                    <Space
+                        android:layout_width="12dp"
+                        android:layout_height="1dp"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <Space
+                        android:layout_width="12dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:text="03:00 ~ 06:00"
+                        android:textColor="@color/white"
+                        android:textSize="19sp"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:id="@+id/tomo_weather_image2"
+                        android:layout_width="33dp"
+                        android:layout_height="match_parent"/>
+                    <Space
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tomo_temp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:textSize="19sp"
+                        android:textColor="@color/white"
+                        android:text=""/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cre"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"
+                        android:text="°C"/>
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/tomo_humidity_image2"
+                        android:layout_width="21dp"
+                        android:layout_height="19dp" />
+
+                    <Space
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tomo_humidity2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:textSize="19sp"
+                        android:textColor="@color/white"
+                        android:text=""/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cre"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"
+                        android:text="%"/>
+
+                    <Space
+                        android:layout_width="12dp"
+                        android:layout_height="1dp"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <Space
+                        android:layout_width="12dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:text="06:00 ~ 09:00"
+                        android:textColor="@color/white"
+                        android:textSize="19sp"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:id="@+id/tomo_weather_image3"
+                        android:layout_width="33dp"
+                        android:layout_height="match_parent"/>
+                    <Space
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tomo_temp3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:textColor="@color/white"
+                        android:textSize="19sp"
+                        android:text=""/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cre"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"
+                        android:text="°C"/>
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/tomo_humidity_image3"
+                        android:layout_width="21dp"
+                        android:layout_height="19dp" />
+
+                    <Space
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tomo_humidity3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:textColor="@color/white"
+                        android:textSize="19sp"
+                        android:text=""/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cre"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"
+                        android:text="%"/>
+
+                    <Space
+                        android:layout_width="12dp"
+                        android:layout_height="1dp"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <Space
+                        android:layout_width="12dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:text="09:00 ~ 12:00"
+                        android:textColor="@color/white"
+                        android:textSize="19sp"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:id="@+id/tomo_weather_image4"
+                        android:layout_width="33dp"
+                        android:layout_height="match_parent"/>
+                    <Space
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tomo_temp4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:textSize="19sp"
+                        android:textColor="@color/white"
+                        android:text=""/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cre"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"
+                        android:text="°C"/>
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/tomo_humidity_image4"
+                        android:layout_width="21dp"
+                        android:layout_height="19dp" />
+
+                    <Space
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tomo_humidity4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:textSize="19sp"
+                        android:textColor="@color/white"
+                        android:text=""/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cre"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"
+                        android:text="%"/>
+
+                    <Space
+                        android:layout_width="12dp"
+                        android:layout_height="1dp"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <Space
+                        android:layout_width="12dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:text="12:00 ~ 15:00"
+                        android:textColor="@color/white"
+                        android:textSize="19sp"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:id="@+id/tomo_weather_image5"
+                        android:layout_width="33dp"
+                        android:layout_height="match_parent"/>
+                    <Space
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tomo_temp5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:textSize="19sp"
+                        android:textColor="@color/white"
+                        android:text=""/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cre"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"
+                        android:text="°C"/>
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/tomo_humidity_image5"
+                        android:layout_width="21dp"
+                        android:layout_height="19dp" />
+
+                    <Space
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tomo_humidity5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:textSize="19sp"
+                        android:textColor="@color/white"
+                        android:text=""/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cre"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"
+                        android:text="%"/>
+
+                    <Space
+                        android:layout_width="12dp"
+                        android:layout_height="1dp"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <Space
+                        android:layout_width="12dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:text="15:00 ~ 18:00"
+                        android:textColor="@color/white"
+                        android:textSize="19sp"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:id="@+id/tomo_weather_image6"
+                        android:layout_width="33dp"
+                        android:layout_height="match_parent"/>
+                    <Space
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tomo_temp6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:textSize="19sp"
+                        android:textColor="@color/white"
+                        android:text=""/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cre"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"
+                        android:text="°C"/>
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/tomo_humidity_image6"
+                        android:layout_width="21dp"
+                        android:layout_height="19dp" />
+
+                    <Space
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tomo_humidity6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:textSize="19sp"
+                        android:textColor="@color/white"
+                        android:text=""/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cre"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"
+                        android:text="%"/>
+
+                    <Space
+                        android:layout_width="12dp"
+                        android:layout_height="1dp"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <Space
+                        android:layout_width="12dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:text="18:00 ~ 21:00"
+                        android:textColor="@color/white"
+                        android:textSize="19sp"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:id="@+id/tomo_weather_image7"
+                        android:layout_width="33dp"
+                        android:layout_height="match_parent"/>
+                    <Space
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tomo_temp7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:textSize="19sp"
+                        android:textColor="@color/white"
+                        android:text=""/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cre"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"
+                        android:text="°C"/>
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/tomo_humidity_image7"
+                        android:layout_width="21dp"
+                        android:layout_height="19dp" />
+
+                    <Space
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tomo_humidity7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:textSize="19sp"
+                        android:textColor="@color/white"
+                        android:text=""/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cre"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"
+                        android:text="%"/>
+
+                    <Space
+                        android:layout_width="12dp"
+                        android:layout_height="1dp"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <Space
+                        android:layout_width="12dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:text="21:00 ~ 24:00"
+                        android:textColor="@color/white"
+                        android:textSize="19sp"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:id="@+id/tomo_weather_image8"
+                        android:layout_width="33dp"
+                        android:layout_height="match_parent" />
+                    <Space
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tomo_temp8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:textSize="19sp"
+                        android:textColor="@color/white"
+                        android:text=""/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cre"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"
+                        android:text="°C"/>
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/tomo_humidity_image8"
+                        android:layout_width="21dp"
+                        android:layout_height="19dp" />
+
+                    <Space
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tomo_humidity8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:textSize="19sp"
+                        android:textColor="@color/white"
+                        android:text=""/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cre"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"
+                        android:text="%"/>
+
+                    <Space
+                        android:layout_width="12dp"
+                        android:layout_height="1dp"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+</LinearLayout>

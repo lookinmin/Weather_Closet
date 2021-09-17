@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="3dp"
+    android:padding="1dp"
+    android:gravity="top"
+    android:paddingTop="10dp"
+    android:orientation="vertical"
+    tools:context=".Help">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="HELP"
+            android:textSize="30sp"
+            android:textColor="#D7AA67"
+            android:gravity="center"
+            android:fontFamily="@font/cre"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" 날씨 데이터 : "
+                android:textSize="16sp"
+                android:gravity="center"
+                android:fontFamily="@font/sebang"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="https://openweathermap.org"
+                android:textSize="16sp"
+                android:textColor="#D7AA67"
+                android:fontFamily="@font/wemakeprice"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" 옷 이미지 출처 : "
+               android:textSize="16sp"
+                android:gravity="center"
+                android:fontFamily="@font/sebang"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="https://www.flaticon.com"
+                android:textSize="16sp"
+                android:textColor="#D7AA67"
+                android:fontFamily="@font/wemakeprice"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" 추천해주는 옷 색상은 임의로 지정한 것이니,"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:fontFamily="@font/sebang"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" 개인의 선호에 맞는 색상을 입으시는 걸 추천합니다."
+            android:textSize="15sp"
+            android:gravity="center"
+            android:fontFamily="@font/sebang"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" 오늘 날짜에 추천되는 옷은 새로고침 버튼을 통해"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:fontFamily="@font/sebang"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" 현재 온도에 해당하는 옷으로 다시 추천받을 수 있습니다."
+            android:textSize="15sp"
+            android:gravity="center"
+            android:fontFamily="@font/sebang"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" 주간 날씨에 추천되는 옷들은"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:fontFamily="@font/sebang"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" 매일 정각에 초기화되어 새롭게 추천됩니다."
+            android:textSize="15sp"
+            android:gravity="center"
+            android:fontFamily="@font/sebang"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" 여성 원피스는 상의에 추천되고,"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:fontFamily="@font/sebang"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" 원피스가 상의에 추천되면 하의는 랜덤으로 추천됩니다."
+            android:textSize="15sp"
+            android:gravity="center"
+            android:fontFamily="@font/sebang"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="설정 변경"
+            android:textSize="25sp"
+            android:textColor="#D7AA67"
+            android:gravity="center"
+            android:fontFamily="@font/cre"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center">
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닉네임  :"
+            android:textSize="23sp"
+            android:fontFamily="@font/cre"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:hint="수정할 닉네임입력"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:fontFamily="@font/cre"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/fix"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/complete"
+            app:backgroundTint="#FF9800"
+            android:layout_gravity="center" />
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center">
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성별 :"
+            android:textSize="23sp"
+            android:fontFamily="@font/cre"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"/>
+
+        <RadioGroup
+            android:id="@+id/choose_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:buttonTint="#FF9800"
+                android:text="MALE"
+                android:fontFamily="@font/cre"/>
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="10dp"/>
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:buttonTint="#FF9800"
+                android:text="FEMALE"
+                android:fontFamily="@font/cre"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"/>
+
+        <ImageButton
+            android:id="@+id/fix2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/complete"
+            app:backgroundTint="#FF9800"
+            android:layout_gravity="center" />
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

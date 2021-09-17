@@ -1,0 +1,1797 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="top"
+    android:id="@+id/background"
+    android:orientation="vertical"
+    tools:context=".Week">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Weekly Weather"
+            android:textSize="27sp"
+            android:textColor="#A1A1F1"
+            android:gravity="center"
+            android:fontFamily="@font/cre"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="60dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Space
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/day1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/cre"
+                        android:textColor="#303030"
+                        android:text=""
+                        android:textSize="18sp" />
+                    <Space
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/set_day1"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:fontFamily="@font/cre"
+                        android:text=""
+                        android:textSize="19sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/day1_pic"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp" />
+
+                    <Space
+                        android:layout_width="6dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:fontFamily="@font/cre"
+                        android:layout_gravity="center"
+                        android:textColor="#303030"
+                        android:textSize="15sp"/>
+
+                    <Space
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Space
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/day1_avgtemp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textColor="#303030"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:text="°C"
+                                android:textColor="#303030"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="4dp"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Space
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/day1_HT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textSize="16sp"
+                                android:textColor="#FF0000"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:text="°C"
+                                android:textColor="#FF0000"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/slash"
+                                android:layout_gravity="center"
+                                app:backgroundTint="#D7AA67" />
+
+                            <TextView
+                                android:id="@+id/day1_LT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textColor="#0050FF"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:textColor="#0050FF"
+                                android:text="°C"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/day1_humidity_image"
+                        android:layout_width="18dp"
+                        android:layout_height="21dp"
+                        android:layout_gravity="center" />
+
+                    <Space
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/day1_humidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/wemakeprice"
+                        android:text="%"
+                        android:textColor="#303030"
+                        android:textSize="17sp" />
+
+                    <Space
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="7dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.3" />
+
+                    <ImageView
+                        android:id="@+id/day1_top_pic"
+                        android:layout_width="30dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center" />
+
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/day1_top"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/cre"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2" />
+
+                    <ImageView
+                        android:id="@+id/day1_bottom_pic"
+                        android:layout_width="30dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center" />
+
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/day1_bottom"
+                        android:layout_width="94dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/cre"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.35" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/day2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/cre"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:textSize="18sp" />
+                    <Space
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/set_day2"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:fontFamily="@font/cre"
+                        android:text=""
+                        android:textSize="19sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/day2_pic"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp" />
+
+                    <Space
+                        android:layout_width="6dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:fontFamily="@font/cre"
+                        android:layout_gravity="center"
+                        android:textColor="#303030"
+                        android:textSize="15sp"/>
+                    <Space
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Space
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/day2_avgtemp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textColor="#303030"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:text="°C"
+                                android:textColor="#303030"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="4dp"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Space
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/day2_HT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textSize="16sp"
+                                android:textColor="#FF0000"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:text="°C"
+                                android:textColor="#FF0000"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/slash"
+                                android:layout_gravity="center"
+                                app:backgroundTint="#D7AA67" />
+
+                            <TextView
+                                android:id="@+id/day2_LT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textColor="#0050FF"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:textColor="#0050FF"
+                                android:text="°C"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/day2_humidity_image"
+                        android:layout_width="18dp"
+                        android:layout_height="21dp"
+                        android:layout_gravity="center" />
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/day2_humidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/wemakeprice"
+                        android:text="%"
+                        android:textColor="#303030"
+                        android:textSize="17sp" />
+
+                    <Space
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="7dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.3"/>
+                    <ImageView
+                        android:id="@+id/day2_top_pic"
+                        android:layout_width="30dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"/>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/day2_top"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:fontFamily="@font/cre"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2" />
+                    <ImageView
+                        android:id="@+id/day2_bottom_pic"
+                        android:layout_width="30dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"/>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/day2_bottom"
+                        android:layout_width="94dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:fontFamily="@font/cre"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.35"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:padding="3dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Space
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/day3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/cre"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:textSize="18sp" />
+                    <Space
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/set_day3"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:fontFamily="@font/cre"
+                        android:text=""
+                        android:textSize="19sp" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <ImageView
+                        android:id="@+id/day3_pic"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp" />
+                    <Space
+                        android:layout_width="6dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:fontFamily="@font/cre"
+                        android:layout_gravity="center"
+                        android:textColor="#303030"
+                        android:textSize="15sp"/>
+                    <Space
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Space
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:id="@+id/day3_avgtemp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textColor="#303030"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:text="°C"
+                                android:textColor="#303030"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="4dp"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Space
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/day3_HT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textSize="16sp"
+                                android:textColor="#FF0000"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:text="°C"
+                                android:textColor="#FF0000"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/slash"
+                                android:layout_gravity="center"
+                                app:backgroundTint="#D7AA67" />
+
+                            <TextView
+                                android:id="@+id/day3_LT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textColor="#0050FF"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:textColor="#0050FF"
+                                android:text="°C"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <ImageView
+                        android:id="@+id/day3_humidity_image"
+                        android:layout_width="18dp"
+                        android:layout_height="21dp"
+                        android:layout_gravity="center" />
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/day3_humidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/wemakeprice"
+                        android:text="%"
+                        android:textColor="#303030"
+                        android:textSize="17sp" />
+                    <Space
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="7dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.3"/>
+                    <ImageView
+                        android:id="@+id/day3_top_pic"
+                        android:layout_width="30dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"/>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/day3_top"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:fontFamily="@font/cre"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"/>
+                    <ImageView
+                        android:id="@+id/day3_bottom_pic"
+                        android:layout_width="30dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"/>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/day3_bottom"
+                        android:layout_width="94dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:fontFamily="@font/cre"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.35"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:padding="3dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Space
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/day4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/cre"
+                        android:textColor="#303030"
+                        android:text=""
+                        android:textSize="18sp" />
+                    <Space
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/set_day4"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:fontFamily="@font/cre"
+                        android:text=""
+                        android:textSize="19sp" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <ImageView
+                        android:id="@+id/day4_pic"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp" />
+                    <Space
+                        android:layout_width="6dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:fontFamily="@font/cre"
+                        android:layout_gravity="center"
+                        android:textColor="#303030"
+                        android:textSize="15sp"/>
+                    <Space
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Space
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:id="@+id/day4_avgtemp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textColor="#303030"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:text="°C"
+                                android:textColor="#303030"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="4dp"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Space
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/day4_HT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textSize="16sp"
+                                android:textColor="#FF0000"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:text="°C"
+                                android:textColor="#FF0000"
+                                android:textSize="14sp" />
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/slash"
+                                android:layout_gravity="center"
+                                app:backgroundTint="#D7AA67" />
+                            <TextView
+                                android:id="@+id/day4_LT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textColor="#0050FF"
+                                android:textSize="16sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:textColor="#0050FF"
+                                android:text="°C"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <ImageView
+                        android:id="@+id/day4_humidity_image"
+                        android:layout_width="18dp"
+                        android:layout_height="21dp"
+                        android:layout_gravity="center" />
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/day4_humidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:textSize="19sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/wemakeprice"
+                        android:text="%"
+                        android:textColor="#303030"
+                        android:textSize="17sp" />
+                    <Space
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="7dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.3"/>
+                    <ImageView
+                        android:id="@+id/day4_top_pic"
+                        android:layout_width="30dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"/>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/day4_top"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:fontFamily="@font/cre"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"/>
+                    <ImageView
+                        android:id="@+id/day4_bottom_pic"
+                        android:layout_width="30dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"/>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/day4_bottom"
+                        android:layout_width="94dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:fontFamily="@font/cre"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.35"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:padding="3dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Space
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/day5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/cre"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:textSize="18sp" />
+                    <Space
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/set_day5"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:fontFamily="@font/cre"
+                        android:text=""
+                        android:textSize="19sp" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <ImageView
+                        android:id="@+id/day5_pic"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp" />
+                    <Space
+                        android:layout_width="6dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/text5"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:fontFamily="@font/cre"
+                        android:layout_gravity="center"
+                        android:textColor="#303030"
+                        android:textSize="15sp"/>
+                    <Space
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Space
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:id="@+id/day5_avgtemp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textColor="#303030"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:text="°C"
+                                android:textColor="#303030"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="4dp"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Space
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/day5_HT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textSize="16sp"
+                                android:textColor="#FF0000"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:text="°C"
+                                android:textColor="#FF0000"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/slash"
+                                android:layout_gravity="center"
+                                app:backgroundTint="#D7AA67" />
+
+                            <TextView
+                                android:id="@+id/day5_LT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textColor="#0050FF"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:textColor="#0050FF"
+                                android:text="°C"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <ImageView
+                        android:id="@+id/day5_humidity_image"
+                        android:layout_width="18dp"
+                        android:layout_height="21dp"
+                        android:layout_gravity="center" />
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/day5_humidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:text=""
+                        android:layout_gravity="center"
+                        android:textColor="#303030"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/wemakeprice"
+                        android:text="%"
+                        android:textColor="#303030"
+                        android:textSize="17sp" />
+
+                    <Space
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="7dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.3"/>
+                    <ImageView
+                        android:id="@+id/day5_top_pic"
+                        android:layout_width="30dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"/>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/day5_top"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:fontFamily="@font/cre"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"/>
+                    <ImageView
+                        android:id="@+id/day5_bottom_pic"
+                        android:layout_width="30dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"/>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/day5_bottom"
+                        android:layout_width="94dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:fontFamily="@font/cre"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.35"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:padding="3dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Space
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/day6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/cre"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:textSize="18sp" />
+                    <Space
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/set_day6"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:fontFamily="@font/cre"
+                        android:text=""
+                        android:textSize="19sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/day6_pic"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp" />
+                    <Space
+                        android:layout_width="6dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/text6"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:fontFamily="@font/cre"
+                        android:layout_gravity="center"
+                        android:textColor="#303030"
+                        android:textSize="15sp"/>
+
+                    <Space
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Space
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/day6_avgtemp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textColor="#303030"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:text="°C"
+                                android:textColor="#303030"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="4dp"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Space
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/day6_HT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textSize="16sp"
+                                android:textColor="#FF0000"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:text="°C"
+                                android:textColor="#FF0000"
+                                android:textSize="14sp" />
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/slash"
+                                android:layout_gravity="center"
+                                app:backgroundTint="#D7AA67" />
+                            <TextView
+                                android:id="@+id/day6_LT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textColor="#0050FF"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:textColor="#0050FF"
+                                android:text="°C"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <ImageView
+                        android:id="@+id/day6_humidity_image"
+                        android:layout_width="18dp"
+                        android:layout_height="21dp"
+                        android:layout_gravity="center" />
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/day6_humidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/wemakeprice"
+                        android:text="%"
+                        android:textColor="#303030"
+                        android:textSize="17sp" />
+                    <Space
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="7dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.3"/>
+                    <ImageView
+                        android:id="@+id/day6_top_pic"
+                        android:layout_width="30dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"/>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/day6_top"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:fontFamily="@font/cre"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"/>
+                    <ImageView
+                        android:id="@+id/day6_bottom_pic"
+                        android:layout_width="30dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"/>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/day6_bottom"
+                        android:layout_width="94dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:fontFamily="@font/cre"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.35"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:padding="3dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Space
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/day7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/cre"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:textSize="18sp" />
+                    <Space
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/set_day7"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:fontFamily="@font/cre"
+                        android:text=""
+                        android:textSize="19sp" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <ImageView
+                        android:id="@+id/day7_pic"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp" />
+                    <Space
+                        android:layout_width="6dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/text7"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:fontFamily="@font/cre"
+                        android:layout_gravity="center"
+                        android:textColor="#303030"
+                        android:textSize="15sp"/>
+                    <Space
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="7dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Space
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/day7_avgtemp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textColor="#303030"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:text="°C"
+                                android:textColor="#303030"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="4dp"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Space
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/day7_HT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textSize="16sp"
+                                android:textColor="#FF0000"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:text="°C"
+                                android:textColor="#FF0000"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/slash"
+                                android:layout_gravity="center"
+                                app:backgroundTint="#D7AA67" />
+
+                            <TextView
+                                android:id="@+id/day7_LT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/wemakeprice"
+                                android:text=""
+                                android:textColor="#0050FF"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/cre"
+                                android:textColor="#0050FF"
+                                android:text="°C"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <ImageView
+                        android:id="@+id/day7_humidity_image"
+                        android:layout_width="18dp"
+                        android:layout_height="21dp"
+                        android:layout_gravity="center_vertical" />
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/day7_humidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/wemakeprice"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:layout_gravity="center"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/wemakeprice"
+                        android:text="%"
+                        android:textColor="#303030"
+                        android:textSize="17sp" />
+
+                    <Space
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="7dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.3"/>
+                    <ImageView
+                        android:id="@+id/day7_top_pic"
+                        android:layout_width="30dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"/>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/day7_top"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:fontFamily="@font/cre"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"/>
+                    <ImageView
+                        android:id="@+id/day7_bottom_pic"
+                        android:layout_width="30dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"/>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/day7_bottom"
+                        android:layout_width="94dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:fontFamily="@font/cre"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.35"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"/>
+</LinearLayout>

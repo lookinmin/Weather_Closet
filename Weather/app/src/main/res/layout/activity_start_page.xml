@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".start_page">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Closet"
+        android:textSize="30sp"
+        android:fontFamily="@font/cre"
+        android:textColor="#EFB866"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25sp"
+            android:fontFamily="@font/cre"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="님  반갑습니다!"
+            android:fontFamily="@font/cre"/>
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:background="@drawable/start_pic"
+            app:backgroundTint="#EFB866"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COVID-19 종식을 위해"
+            android:fontFamily="@font/cre"
+            android:textSize="23sp"
+            android:gravity="center"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23sp"
+                android:text="방역수칙을 꼭 준수해주세요!"
+                android:fontFamily="@font/cre"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

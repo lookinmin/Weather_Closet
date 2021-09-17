@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothes>
+    <Temp9>
+        <top>반팔 티</top>
+        <top>반팔 셔츠</top>
+        <top>PK 반팔티</top>
+        <top>민소매</top>
+        <bottoms>트레이닝 쇼츠</bottoms>
+        <bottoms>카고 쇼츠</bottoms>
+        <bottoms>데님 쇼츠</bottoms>
+        <bottoms>코튼 쇼츠</bottoms>
+        <bottoms>린넨 팬츠</bottoms>
+        <bottoms>플리츠</bottoms>
+        <bottoms>얇은 슬랙스</bottoms>
+        <bottoms>트레이닝 팬츠</bottoms>
+    </Temp9>
+    <Temp8>
+        <top>반팔 티</top>
+        <top>반팔 셔츠</top>
+        <top>PK 반팔티</top>
+        <top>긴팔 티</top>
+        <top>얇은 셔츠</top>
+        <top>PK 티</top>
+        <bottoms>트레이닝 쇼츠</bottoms>
+        <bottoms>카고 쇼츠</bottoms>
+        <bottoms>데님 쇼츠</bottoms>
+        <bottoms>코튼 쇼츠</bottoms>
+        <bottoms>린넨 팬츠</bottoms>
+        <bottoms>플리츠</bottoms>
+        <bottoms>슬랙스</bottoms>
+        <bottoms>트레이닝 팬츠</bottoms>
+        <bottoms>데님 팬츠</bottoms>
+        <bottoms>크림 진</bottoms>
+        <bottoms>블랙 진</bottoms>
+        <bottoms>조거 팬츠</bottoms>
+        <bottoms>코튼 팬츠</bottoms>
+    </Temp8>
+    <Temp7>
+        <top>긴팔 티</top>
+        <top>PK 티</top>
+        <top>셔츠</top>
+        <top>스웨트 셔츠</top>
+        <top>후드티</top>
+        <top>린넨 자켓</top>
+        <top>후드 집업</top>
+        <top>트레이닝 재킷</top>
+        <bottoms>린넨 팬츠</bottoms>
+        <bottoms>플리츠</bottoms>
+        <bottoms>슬랙스</bottoms>
+        <bottoms>트레이닝 팬츠</bottoms>
+        <bottoms>데님 팬츠</bottoms>
+        <bottoms>크림 진</bottoms>
+        <bottoms>블랙 진</bottoms>
+        <bottoms>조거 팬츠</bottoms>
+        <bottoms>코튼 팬츠</bottoms>
+    </Temp7>
+
+    <Temp6>
+        <top>셔츠</top>
+        <top>스웨트 셔츠</top>
+        <top>후드티</top>
+        <top>블레이저</top>
+        <top>트러커 자켓</top>
+        <top>후드 집업</top>
+        <top>데님 자켓</top>
+        <top>바람막이(아노락)</top>
+        <top>트렌치 코트</top>
+        <top>바버 자켓</top>
+        <top>카디건</top>
+        <top>트레이닝 재킷</top>
+        <bottoms>플리츠</bottoms>
+        <bottoms>슬랙스</bottoms>
+        <bottoms>트레이닝 팬츠</bottoms>
+        <bottoms>데님 팬츠</bottoms>
+        <bottoms>크림 진</bottoms>
+        <bottoms>블랙 진</bottoms>
+        <bottoms>조거 팬츠</bottoms>
+        <bottoms>코튼 팬츠</bottoms>
+    </Temp6>
+    <Temp5>
+        <top>스웨트 셔츠</top>
+        <top>후드티</top>
+        <top>니트</top>
+        <top>블레이저</top>
+        <top>트러커 자켓</top>
+        <top>후드 집업</top>
+        <top>트렌치 코트</top>
+        <top>데님 자켓</top>
+        <top>레더 자켓</top>
+        <top>MA-1</top>
+        <top>블루종</top>
+        <top>바버 자켓</top>
+        <top>스타디움 재킷</top>
+        <top>바람막이(아노락)</top>
+        <bottoms>슬랙스</bottoms>
+        <bottoms>트레이닝 팬츠</bottoms>
+        <bottoms>데님 팬츠</bottoms>
+        <bottoms>크림 진</bottoms>
+        <bottoms>블랙 진</bottoms>
+        <bottoms>조거 팬츠</bottoms>
+        <bottoms>코튼 팬츠</bottoms>
+    </Temp5>
+    <Temp4>
+        <top>기모 맨투맨</top>
+        <top>기모 후드티</top>
+        <top>니트</top>
+        <top>후드 집업</top>
+        <top>레더 자켓</top>
+        <top>MA-1</top>
+        <top>블루종</top>
+        <top>스타디움 재킷</top>
+        <top>패딩 베스트</top>
+        <top>숏 코트</top>
+        <top>롱 코트</top>
+        <bottoms>슬랙스</bottoms>
+        <bottoms>트레이닝 팬츠</bottoms>
+        <bottoms>데님 팬츠</bottoms>
+        <bottoms>크림 진</bottoms>
+        <bottoms>블랙 진</bottoms>
+        <bottoms>조거 팬츠</bottoms>
+        <bottoms>코튼 팬츠</bottoms>
+    </Temp4>
+    <Temp3>
+        <top>MA-1</top>
+        <top>무스탕</top>
+        <top>패딩 베스트</top>
+        <top>숏 코트</top>
+        <top>롱 코트</top>
+        <top>숏 패딩</top>
+        <top>롱 패딩</top>
+        <bottoms>슬랙스</bottoms>
+        <bottoms>트레이닝 팬츠</bottoms>
+        <bottoms>데님 팬츠</bottoms>
+        <bottoms>크림 진</bottoms>
+        <bottoms>블랙 진</bottoms>
+        <bottoms>조거 팬츠</bottoms>
+        <bottoms>코튼 팬츠</bottoms>
+        <bottoms>기모 팬츠</bottoms>
+    </Temp3>
+    <Temp2>
+        <top>숏 패딩</top>
+        <top>롱 패딩</top>
+        <top>숏 코트</top>
+        <top>롱 코트</top>
+        <top>무스탕</top>
+        <bottoms>슬랙스</bottoms>
+        <bottoms>트레이닝 팬츠</bottoms>
+        <bottoms>데님 팬츠</bottoms>
+        <bottoms>크림 진</bottoms>
+        <bottoms>블랙 진</bottoms>
+        <bottoms>조거 팬츠</bottoms>
+        <bottoms>코튼 팬츠</bottoms>
+        <bottoms>기모 팬츠</bottoms>
+    </Temp2>
+    <Temp1>
+        <top>숏 패딩</top>
+        <top>롱 패딩</top>
+        <top>무스탕</top>
+        <bottoms>슬랙스</bottoms>
+        <bottoms>트레이닝 팬츠</bottoms>
+        <bottoms>데님 팬츠</bottoms>
+        <bottoms>크림 진</bottoms>
+        <bottoms>블랙 진</bottoms>
+        <bottoms>조거 팬츠</bottoms>
+        <bottoms>코튼 팬츠</bottoms>
+        <bottoms>기모 팬츠</bottoms>
+    </Temp1>
+</clothes>
